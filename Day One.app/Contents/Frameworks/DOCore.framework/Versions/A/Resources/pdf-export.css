@@ -1,0 +1,459 @@
+html,body,h1,h2,h3,h4,h5,h6,p,blockquote,pre,code,em,img,small,strong,sub,sup,b,i,dl,dt,dd,ol,ul,li,table,tbody,tfoot,thead,tr,th,td {
+    font-family:Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border:0;
+    font-size:10pt;
+    outline:0;
+    margin:0;
+    padding:0;
+
+
+    /*this elimitantes downscaling caused by long unbreakable character sequences*/
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+
+* {
+	background: transparent !important;
+	box-shadow: none !important;
+	text-shadow: none !important;
+    -webkit-print-color-adjust: exact;
+}
+
+body {
+    /*border:1px solid #c9c9c9;*/
+    margin:0;
+    padding:0;
+}
+
+.container {
+    width:300pt;
+    /*border:1px solid #a4d594;*/
+    margin:18pt auto 2pt;
+}
+
+em {
+}
+
+strong {
+    color:#252525;
+}
+
+a {
+    color:#399FC3;
+    text-decoration:none;
+    font-weight: normal;
+    /*this elimitantes downscaling caused by long links*/
+    overflow: hidden;
+    text-overflow:ellipsis;
+    
+}
+
+
+a:link:after, a:visited:after { 
+	color:#999;
+    font-weight: 400;
+    font-style: italic;
+    content:" " attr(href) " "; 
+    font-size: 84%;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+/*
+ * Don't show links for images, or javascript/internal links
+ */
+     
+a[href^="javascript:"]:after,
+a[href^="dayone:"]:after,
+a[href^="tel:"]:after,
+a[href^="mailto:"]:after,
+a[href^="twitter:"]:after,
+a[href^="#"]:after {
+	content: "";
+}
+
+
+/* make list bullets visible (at the cost of risk of scale being screwed up by overflow in lists) */
+li {
+    overflow:visible;
+}
+
+a:hover {
+    color:#EA4C89;
+}
+
+hr {
+    border:0;
+    border-top:1pt solid #eaeaea;
+    display:block;
+    height:1px;
+    margin:1em 0;
+    padding:0;
+}
+
+
+h1 {
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 1.3em;
+	
+    padding-top: 16px;
+    margin-bottom: 4px;
+}
+
+
+h2, h3, h4, h5, h6 {
+  line-height: 1.1em;
+  padding-top: 16px;
+  margin-bottom: 4px;
+}
+
+
+h2 {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+h3 {
+  font-weight: normal;
+  color: #ea4c89;
+  font-size: 1em;
+}
+
+h4 {
+  font-weight: normal;
+  color: #999;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+
+h5, h6 {
+  font-size: .8em;
+}
+
+h5 {
+  color: #339BCB;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h6 {
+  font-weight: normal;
+  color: #AAA;
+}
+
+
+dl,ol,ul,p,blockquote,pre {
+    margin-top:7pt;
+    margin-bottom:7pt;
+}
+
+img.header {
+    max-width:340pt;
+    margin-left: -20pt;
+    margin-top:8pt;
+    margin-bottom:9pt;
+    display:block;
+}
+
+img {
+    max-width:300pt;
+    margin-top:8pt;
+    margin-bottom:9pt;
+    display:block;
+}
+
+.video_embed {
+    padding:10px 0;
+}
+
+ol,ul {
+    padding-left:12pt;
+    margin:8pt 0;
+}
+
+ol ol,ol ul,ul ol,ul ul {
+    margin:3pt 0;
+}
+
+/* see usage for explanation of purpose */
+.nobreak {
+    page-break-inside:avoid;
+}
+
+/* see usage for explanation of purpose */
+.nobreak-header {
+    page-break-inside:avoid;
+    padding-bottom: 20pt;
+}
+
+/* see usage for explanation of purpose */
+.entry-content {
+    margin-top: -20pt;
+}
+
+/* Compensate for that margins are not collapsing due to entry-content div wrapping */
+.entry-content *:first-child {
+    margin-top:0pt;
+}
+
+.date {
+    font-size: 8pt;
+    color:#399FC3;
+    font-weight:700;
+    text-transform:uppercase;
+    border-top:1pt solid #ddd;
+    padding-top: 8pt;
+}
+
+.loc {
+    font-size: 7pt;
+    font-style:italic;
+    font-weight:700;
+    color:#399FC3;
+    margin: 5pt 0 4pt;
+    text-transform:uppercase;
+}
+
+.weather {
+    font-size: 7pt;
+    font-style:italic;
+    font-weight:700;
+    color:#399FC3;
+    margin: 5pt 0;
+    text-transform:uppercase;
+}
+
+.entry-bottomline {
+    margin: 0;
+    padding: 0;
+    border-top:1pt solid #dbdbdb;
+}
+
+.entry-meta {
+    margin: 0;
+    padding: 4pt 0 4pt 1pt;
+    border-bottom:1pt solid #dbdbdb;
+}
+
+.entry-footer {
+    margin: 0 0 25pt;
+}
+
+
+
+/* Removes unnecessary blank space after the last border line.
+ * This blank space causes empty pages to be added to the PDF
+ * in some cases.
+ */
+whole-entry:last-of-type .entry-footer {
+    padding: 0 0 0pt;
+}
+
+
+
+/* Code / Preformatted */
+
+blockquote { 
+    border-left: solid 4pt #ddd; 
+    padding-left: 7pt; 
+    quotes: none; 
+}
+
+pre, code, tt {
+    font: 9pt 'Bitstream Vera Sans Mono', Courier New, monospace;
+}
+
+pre {
+    background-color: #FFF;
+    border: #E8E8E8 1pt solid;
+    color: black;
+    display: block;
+    margin: 9pt 0;
+    overflow: auto;
+    padding: 3pt 7pt;
+    white-space: pre-wrap;
+    word-wrap:break-word;
+    cursor:text;
+    max-width:260pt;
+    overflow:auto;
+    border-radius:3pt;
+    -webkit-border-radius:3pt;
+}
+code { 
+    color: #2c92b0;
+    border: 1px solid #E8E8E8;
+    font-size: 9pt;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+}
+
+pre code {
+    font-size: 9pt;
+    padding: 0!important;
+    background-color: #FFF;
+    border: none!important;
+    overflow:visible;
+}
+
+/* Tables */
+
+table {
+  width:100%;
+  border-collapse:collapse;
+  display: table-header-group;
+}
+
+th, td {
+  text-align:left;
+  padding:5px 10px;
+  border-bottom:1px solid #e5e5e5;
+}
+
+dt {
+  color:#444;
+  font-weight:700;
+}
+
+th {
+  color:#444;
+}
+
+
+/* Footnotes */
+
+
+.footnotes ol li {
+    margin-bottom:15px;
+    margin-left:.25em;
+    font-weight:800;
+    font-size:.85em;
+    overflow:visible;
+}
+
+.footnotes ol li p {
+    font-weight:400;
+    font-size:1em;
+    overflow:visible;
+}
+
+sup,sub,a.footnote {
+    font-size:1.4ex;
+    height:0;
+    line-height:1;
+    vertical-align:super;
+    position:relative;
+    overflow:visible;
+}
+
+sub {
+    vertical-align:sub;
+    top:-1px;
+}
+
+ol li,ul li {
+    margin-left:.5em;
+    margin-bottom:.3em;
+}
+
+/*
+ * Footer / 
+ */
+
+.footer {
+	margin: 20pt 0 0;
+}
+.footer .author {
+	font-weight: 700;
+}
+.footer p.dayone {
+	color:#47B1C7;
+	font-size: 7pt;
+}
+.footer .blue {
+	color:#47B1C7;
+}
+
+.footer p{
+	font-size: 7pt;
+	font-style: italic;
+	text-align: center;
+	margin: 4pt 0;
+}
+.footer p.stats{
+	font-size: 6pt;
+	text-align: center;
+}
+
+
+/* Pygment */
+.highlight  { background: #ffffff; }
+.highlight .c { color: #999988; font-style: italic } /* Comment */
+.highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
+.highlight .k { font-weight: bold } /* Keyword */
+.highlight .o { font-weight: bold } /* Operator */
+.highlight .cm { color: #999988; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #999999; font-weight: bold } /* Comment.Preproc */
+.highlight .c1 { color: #999988; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #999999; font-weight: bold; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
+.highlight .gd .x { color: #000000; background-color: #ffaaaa } /* Generic.Deleted.Specific */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #aa0000 } /* Generic.Error */
+.highlight .gh { color: #999999 } /* Generic.Heading */
+.highlight .gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
+.highlight .gi .x { color: #000000; background-color: #aaffaa } /* Generic.Inserted.Specific */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #555555 } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold; } /* Generic.Subheading */
+.highlight .gt { color: #aa0000 } /* Generic.Traceback */
+.highlight .kc { font-weight: bold } /* Keyword.Constant */
+.highlight .kd { font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { font-weight: bold } /* Keyword.Pseudo */
+.highlight .kr { font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #445588; font-weight: bold } /* Keyword.Type */
+.highlight .m { color: #009999 } /* Literal.Number */
+.highlight .s { color: #d14 } /* Literal.String */
+.highlight .na { color: #008080 } /* Name.Attribute */
+.highlight .nb { color: #0086B3 } /* Name.Builtin */
+.highlight .nc { color: #445588; font-weight: bold } /* Name.Class */
+.highlight .no { color: #008080 } /* Name.Constant */
+.highlight .ni { color: #800080 } /* Name.Entity */
+.highlight .ne { color: #990000; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #990000; font-weight: bold } /* Name.Function */
+.highlight .nn { color: #555555 } /* Name.Namespace */
+.highlight .nt { color: #000080 } /* Name.Tag */
+.highlight .nv { color: #008080 } /* Name.Variable */
+.highlight .ow { font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mf { color: #009999 } /* Literal.Number.Float */
+.highlight .mh { color: #009999 } /* Literal.Number.Hex */
+.highlight .mi { color: #009999 } /* Literal.Number.Integer */
+.highlight .mo { color: #009999 } /* Literal.Number.Oct */
+.highlight .sb { color: #d14 } /* Literal.String.Backtick */
+.highlight .sc { color: #d14 } /* Literal.String.Char */
+.highlight .sd { color: #d14 } /* Literal.String.Doc */
+.highlight .s2 { color: #d14 } /* Literal.String.Double */
+.highlight .se { color: #d14 } /* Literal.String.Escape */
+.highlight .sh { color: #d14 } /* Literal.String.Heredoc */
+.highlight .si { color: #d14 } /* Literal.String.Interpol */
+.highlight .sx { color: #d14 } /* Literal.String.Other */
+.highlight .sr { color: #009926 } /* Literal.String.Regex */
+.highlight .s1 { color: #d14 } /* Literal.String.Single */
+.highlight .ss { color: #990073 } /* Literal.String.Symbol */
+.highlight .bp { color: #999999 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #008080 } /* Name.Variable.Class */
+.highlight .vg { color: #008080 } /* Name.Variable.Global */
+.highlight .vi { color: #008080 } /* Name.Variable.Instance */
+.highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
+
+.type-csharp .highlight .k { color: #0000FF }
+.type-csharp .highlight .kt { color: #0000FF }
+.type-csharp .highlight .nf { color: #000000; font-weight: normal }
+.type-csharp .highlight .nc { color: #2B91AF }
+.type-csharp .highlight .nn { color: #000000 }
+.type-csharp .highlight .s { color: #A31515 }
+.type-csharp .highlight .sc { color: #A31515 }

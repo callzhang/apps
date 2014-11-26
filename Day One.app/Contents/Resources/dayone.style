@@ -1,0 +1,79 @@
+# Styles using 'Solarized' color scheme
+# by Ethan Schoonover: http://ethanschoonover.com/solarized
+# 
+# (light background version)
+
+editor
+foreground: 333333 # base01
+background: ffffff # white
+caret: 000000
+
+H1
+font-style: bold
+foreground: 339BCB
+
+H2
+font-style: bold
+foreground: 339BCB
+
+H3
+foreground: 339BCB #
+
+H4
+foreground: 339BCB #
+
+H5
+foreground: 339BCB #
+
+H6
+foreground: 339BCB #
+
+HRULE
+foreground: 7A7A7A # 
+
+LIST_BULLET
+foreground: 339BCB #
+
+LIST_ENUMERATOR
+foreground: 339BCB #
+
+LINK
+foreground: 47B1C7 #
+
+AUTO_LINK_URL
+foreground: 47B1C7 #
+
+AUTO_LINK_EMAIL
+foreground: 47B1C7 # Day One Teal
+
+IMAGE
+foreground: d33682 # magenta
+
+REFERENCE
+foreground: 7A7A7A # light gray
+
+CODE
+foreground: 7A7A7A
+font-style: italic
+
+EMPH
+foreground: 373737 # 
+font-style: italic
+
+STRONG
+foreground: 373737 # 
+font-style: bold
+
+HTML_ENTITY
+foreground: 6c71c4 # violet
+
+COMMENT
+foreground: 7A7A7A # light gray
+
+
+VERBATIM
+foreground: 7A7A7A # light gray
+background: F6F6F6
+
+BLOCKQUOTE
+foreground: 009ac0 # Day One Teal

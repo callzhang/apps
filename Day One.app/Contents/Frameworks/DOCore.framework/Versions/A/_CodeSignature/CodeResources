@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>files</key>
+	<dict>
+		<key>Resources/DropboxState.momd/DropboxState 2.mom</key>
+		<data>
+		VNvKFCAolExCShHxz4M77Zk5ztw=
+		</data>
+		<key>Resources/DropboxState.momd/DropboxState 2.omo</key>
+		<data>
+		eStlqmIqgoQzpojh0YGLLelA1PQ=
+		</data>
+		<key>Resources/DropboxState.momd/DropboxState.mom</key>
+		<data>
+		uLk4l0H0ZqRhZYs60tyBGYhbF6Q=
+		</data>
+		<key>Resources/DropboxState.momd/VersionInfo.plist</key>
+		<data>
+		4uLZZWXXTvTKcPgAZ20FgnX8s4A=
+		</data>
+		<key>Resources/Info.plist</key>
+		<data>
+		YXfdtGGY/FqiapapFPcNip51V7Q=
+		</data>
+		<key>Resources/JournalEntry.momd/JournalEntry 10.mom</key>
+		<data>
+		ia5JcYTNKO0jQGxxmriLF85rA8I=
+		</data>
+		<key>Resources/JournalEntry.momd/JournalEntry 11.mom</key>
+		<data>
+		+KPh5RHYKifuMHjvSPWlczjQQig=
+		</data>
+		<key>Resources/JournalEntry.momd/JournalEntry 11.omo</key>
+		<data>
+		QBSpmOBNpMg54cgTOFPwk/5/B7I=
+		</data>
+		<key>Resources/JournalEntry.momd/JournalEntry 2.mom</key>
+		<data>
+		ucBo7Sac/+/Faxraiuk8TMEL4hU=
+		</data>
+		<key>Resources/JournalEntry.momd/JournalEntry 3.mom</key>
+		<data>
+		rQoPFnXnQhXB6HLltUc7jnK904w=
+		</data>
+		<key>Resources/JournalEntry.momd/JournalEntry 4.mom</key>
+		<data>
+		Wlb6CyjCIFmrxMc5rMDs0yAj4HM=
+		</data>
+		<key>Resources/JournalEntry.momd/JournalEntry 5.mom</key>
+		<data>
+		NXsd6r3mTeBQqYoAm3uXPXH6nqw=
+		</data>
+		<key>Resources/JournalEntry.momd/JournalEntry 6.mom</key>
+		<data>
+		0JjXC4cjA1pb7BXLqQNCrOnSnI0=
+		</data>
+		<key>Resources/JournalEntry.momd/JournalEntry 7.mom</key>
+		<data>
+		UKKt3+vrdPzs7f9sil7ywD5k8EA=
+		</data>
+		<key>Resources/JournalEntry.momd/JournalEntry 8.mom</key>
+		<data>
+		63wljyxaQAjBjDrRAsepCZLr1Iw=
+		</data>
+		<key>Resources/JournalEntry.momd/JournalEntry 9.mom</key>
+		<data>
+		aBdkiGEUxx06nSs4uJZOBVuC6JQ=
+		</data>
+		<key>Resources/JournalEntry.momd/JournalEntry.mom</key>
+		<data>
+		arfWLJS7DggWZSJbdlOWVvc5I3U=
+		</data>
+		<key>Resources/JournalEntry.momd/VersionInfo.plist</key>
+		<data>
+		m27Jc1O9+N+NGAfNdDltq7jVIts=
+		</data>
+		<key>Resources/JournalEntry1-2.cdm</key>
+		<data>
+		lcuKTFIf2mrRefH3jqMejKhImTQ=
+		</data>
+		<key>Resources/JournalEntry6-10.cdm</key>
+		<data>
+		8pOKmceom4Gzs1/1Vw05Ye0XreY=
+		</data>
+		<key>Resources/JournalEntry6-11.cdm</key>
+		<data>
+		frTIBFTMRGf/psGn7gsxDBT11ck=
+		</data>
+		<key>Resources/JournalEntry6-7.cdm</key>
+		<data>
+		vr6L72X2XQnFEYCR4lBEJfr8biQ=
+		</data>
+		<key>Resources/JournalEntry6-8.cdm</key>
+		<data>
+		erEeefOzrn7xbBTVer+kTFijdpc=
+		</data>
+		<key>Resources/JournalEntry6-9.cdm</key>
+		<data>
+		6zRhR8bRBYVrg7Lki/kid6sFFXs=
+		</data>
+		<key>Resources/en.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MiLKDDnrUKr4EmuvhS5VQwxHGK8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/location-block.html</key>
+		<data>
+		XwgcqSuNd4mLnB9jnumJsqZG/dY=
+		</data>
+		<key>Resources/pdf-export-content-block.html</key>
+		<data>
+		emGXIj0dQ1PIyGKbWMmanT4CkuE=
+		</data>
+		<key>Resources/pdf-export.css</key>
+		<data>
+		iN8Fd2H9sDF79Hz42aHeTpwWCX8=
+		</data>
+		<key>Resources/pdf-export.html</key>
+		<data>
+		VdJdj95uUgB6IlMTfU7GrJPrSDM=
+		</data>
+	</dict>
+	<key>rules</key>
+	<dict>
+		<key>^Resources/</key>
+		<true/>
+		<key>^Resources/.*\.lproj/</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>1000</real>
+		</dict>
+		<key>^Resources/.*\.lproj/locversion.plist$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>1100</real>
+		</dict>
+		<key>^version.plist$</key>
+		<true/>
+	</dict>
+</dict>
+</plist>

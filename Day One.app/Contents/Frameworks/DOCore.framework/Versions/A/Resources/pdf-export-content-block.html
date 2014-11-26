@@ -1,0 +1,22 @@
+
+<!-- 
+ Because webkit doesn't support page-break-after and page-break-before CSS properties,
+ we have to trick it to disallow first line of content to be separated from date/image header
+ by pagebreak. To do so we make the the header a bit taller so that if the first line of
+ content could not fit into the same page, then the header itself would have been moved to
+ the next page.
+-->
+<div class="%5$@ whole-entry">              <!-- dynamic class of the wrapper: breakable or non-breakable -->
+    <div class="nobreak-header">
+        <p class="date">%1$@</p><!-- date -->
+        %2$@                    <!-- photo url -->
+    </div>
+    <div class="entry-content">
+        %3$@                    <!-- entry content -->
+        <div class="entry-bottomline"></div>
+    </div>
+    <div class="nobreak">
+        %4$@                        <!-- location and weather block (see location-block.html) -->
+    </div>
+    <div class="entry-footer"></div>
+</div>
